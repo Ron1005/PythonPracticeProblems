@@ -9,6 +9,7 @@
 # Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 # It does not matter what you leave beyond the returned k (hence they are underscores).
 
+#My Solution
 def removeDuplicates(nums) -> int:
         s1 = sorted(list(set(nums)))
         for x in range(0,len(nums)):
