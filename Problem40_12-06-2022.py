@@ -38,3 +38,22 @@ def printvaluefromNto1(num):
 
 printvaluefromNto1(N)
 
+#Print values from 1 to N using backtracking i.e. without using i + 1
+def printvalues1toNbacktracking(num):
+    if num < 1:
+        return
+    printvalues1toNbacktracking(num-1)
+    print(num,end="")
+
+printvalues1toNbacktracking(N)
+
+#Print values from N to 1 using backtracking i.e. without using i - 1
+
+def printvaluesNto1backtracking(num,N):
+    if num > N:
+        return
+    printvaluesNto1backtracking(num+1,N)
+    print(num,end="")
+
+print()
+printvaluesNto1backtracking(1,N)
